@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FinPath Nigeria — Offline</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', 'Segoe UI', sans-serif;
+      background: #0B3D2E;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 28px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+      color: #0B3D2E;
+      margin-bottom: 4px;
+    }
+    .logo span { color: #D4A017; }
+    .sub { font-size: 10px; color: #2ECC8A; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 32px; }
+    .icon { font-size: 56px; margin-bottom: 20px; }
+    h1 { font-size: 22px; font-weight: 800; color: #0B3D2E; margin-bottom: 12px; }
+    p { font-size: 14px; color: #6B7C6E; line-height: 1.7; margin-bottom: 28px; }
+    .features { background: #E8F4F0; border-radius: 12px; padding: 16px; margin-bottom: 24px; text-align: left; }
+    .feature { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 13px; color: #2C3E50; }
+    .feature:last-child { margin-bottom: 0; }
+    .feature-icon { font-size: 18px; flex-shrink: 0; }
+    .btn {
+      display: block;
+      background: #0B3D2E;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 14px 0;
+      width: 100%;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #0B3D2E;
+      border: 2px solid #0B3D2E;
+    }
+    .status { font-size: 11px; color: #6B7C6E; margin-top: 16px; }
+    .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #E74C3C; margin-right: 6px; animation: pulse 1.5s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">FinPath<span>.</span></div>
+    <div class="sub">Nigeria</div>
+    <div class="icon">📡</div>
+    <h1>You're Offline</h1>
+    <p>No internet connection right now. Your data is safely stored on your device. Reconnect to access your AI Advisor and live investment data.</p>
+    <div class="features">
+      <div class="feature"><span class="feature-icon">✅</span> Budget planner works offline</div>
+      <div class="feature"><span class="feature-icon">✅</span> Savings goals accessible offline</div>
+      <div class="feature"><span class="feature-icon">✅</span> Financial lessons available offline</div>
+      <div class="feature"><span class="feature-icon">⏳</span> AI Advisor needs connection</div>
+    </div>
+    <button class="btn" onclick="window.location.reload()">Try Reconnecting</button>
+    <a href="/" class="btn btn-outline">Go to Home</a>
+    <div class="status"><span class="dot"></span>Waiting for connection...</div>
+  </div>
+  <script>
+    window.addEventListener('online', () => { window.location.href = '/'; });
+  </script>
+</body>
+</html>

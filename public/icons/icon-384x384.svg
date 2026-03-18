@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="384" height="384" viewBox="0 0 384 384">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B3D2E"/>
+      <stop offset="100%" stop-color="#1A6B4A"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="384" height="384" rx="77" fill="url(#bg)"/>
+  <!-- Circle -->
+  <circle cx="192" cy="172.8" r="138.24" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="9.600000000000001"/>
+  <!-- F letter -->
+  <text
+    x="192"
+    y="226.56"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="161.28"
+    font-weight="bold"
+    text-anchor="middle"
+    fill="white"
+    letter-spacing="-1"
+  >F</text>
+  <!-- Gold dot -->
+  <circle cx="253.44" cy="138.24" r="21.12" fill="#F0B429"/>
+  <!-- "Nigeria" text (only visible at larger sizes) -->
+  <text x="192" y="337.92" font-family="Arial, sans-serif" font-size="38.400000000000006" font-weight="600" text-anchor="middle" fill="rgba(255,255,255,0.55)" letter-spacing="3.072">NIGERIA</text>
+</svg>
