@@ -1,28 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import './index.css';
 import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  React.createElement(React.StrictMode, null,
+    React.createElement(App, null)
+  )
 );
 
-// Hide the splash screen once React has mounted
+// Hide splash screen
 if (window.__hideSplash) {
   setTimeout(window.__hideSplash, 400);
 }
 
-// Register service worker for PWA offline support
-serviceWorkerRegistration.register({
-  onSuccess: (registration) => {
-    console.log('[App] FinPath is cached and ready for offline use.');
-  },
-  onUpdate: (registration) => {
-    console.log('[App] New version of FinPath available.');
-    // The usePWA hook will detect this and show the update banner
-  },
-});
+// Register service worker
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/service-worker.js')
+      .then(function(reg) {
+        console.log('[SW] Registered:', reg.scope);
+      })
+      .catch(function(err) {
+        console.log('[SW] Registration failed:', err);
+      });
+  });
+}

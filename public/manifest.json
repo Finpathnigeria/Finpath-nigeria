@@ -1,102 +1,14 @@
 {
   "short_name": "FinPath",
-  "name": "FinPath Nigeria — Civil Servant Finance",
-  "description": "Nigeria's financial platform for civil and public servants. Invest smarter, plan better, build generational wealth.",
-  "start_url": "/",
-  "scope": "/",
+  "name": "FinPath Nigeria",
+  "description": "Financial platform for Nigerian civil and public servants",
+  "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#0B3D2E",
   "theme_color": "#0B3D2E",
-  "lang": "en-NG",
-  "categories": ["finance", "productivity", "utilities"],
+  "background_color": "#0B3D2E",
   "icons": [
-    {
-      "src": "icons/icon-72x72.png",
-      "sizes": "72x72",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-128x128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-152x152.png",
-      "sizes": "152x152",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "icons/icon-384x384.png",
-      "sizes": "384x384",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icons/icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "screenshots/home.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "label": "FinPath Dashboard — Civil Servant Finance"
-    },
-    {
-      "src": "screenshots/invest.png",
-      "sizes": "390x844",
-      "type": "image/png",
-      "label": "Investment Hub — 35+ Investment Options"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Open Investment Hub",
-      "short_name": "Invest",
-      "description": "Browse 35+ investment options",
-      "url": "/?tab=Invest",
-      "icons": [{"src": "icons/icon-96x96.png", "sizes": "96x96"}]
-    },
-    {
-      "name": "Ask AI Advisor",
-      "short_name": "AI Advisor",
-      "description": "Get personalised financial advice",
-      "url": "/?tab=AI",
-      "icons": [{"src": "icons/icon-96x96.png", "sizes": "96x96"}]
-    },
-    {
-      "name": "Budget Planner",
-      "short_name": "Budget",
-      "description": "Plan your monthly budget",
-      "url": "/?tab=Plan",
-      "icons": [{"src": "icons/icon-96x96.png", "sizes": "96x96"}]
-    }
-  ],
-  "prefer_related_applications": false,
-  "related_applications": []
+    { "src": "icons/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
 }
